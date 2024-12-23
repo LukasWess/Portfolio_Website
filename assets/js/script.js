@@ -71,7 +71,13 @@ document.addEventListener('visibilitychange',
 
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
-    strings: ["frontend development", "backend development", "web designing", "android development", "web development"],
+    strings: ["Backend development", 
+        "Artificial Intelligence", 
+        "Database development", 
+        "Web development", 
+        "Machine Learning",
+        "Server deployment",
+        "Linux"],
     loop: true,
     typeSpeed: 50,
     backSpeed: 25,
