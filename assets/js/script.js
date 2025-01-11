@@ -39,7 +39,7 @@ $(document).ready(function () {
 
     // <!-- emailjs to mail contact form data -->
     $("#contact-form").submit(function (event) {
-        emailjs.init("user_TTDmetQLYgWCLzHTDgqxm");
+        emailjs.init("wmMJm9uaBXakI5NeM");
 
         emailjs.sendForm('contact_service', 'template_contact', '#contact-form')
             .then(function (response) {
@@ -59,11 +59,11 @@ $(document).ready(function () {
 document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
-            document.title = "Portfolio | Jigar Sable";
+            document.title = "Portfolio | Lukas Wessels";
             $("#favicon").attr("href", "assets/images/favicon.png");
         }
         else {
-            document.title = "Come Back To Portfolio";
+            document.title = "See you soon!";
             $("#favicon").attr("href", "assets/images/favhand.png");
         }
     });
