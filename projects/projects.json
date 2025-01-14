@@ -4,20 +4,20 @@
     "name": "E-Commerce backend system",
     "desc": "E-Commerce backend with features like product management, order management, user management, database, API's, etc.",
     "image": "ecommerce",
-    "category": "mern",
+    "category": "NodeJS, JWT, MySQL, Sequelize, Express",
     "links": {
       "view": "https://github.com/LukasWess/E-Commerce-Backend.git",
       "code": "https://github.com/LukasWess/E-Commerce-Backend.git"
     }
   },
   {
-    "name": "Flipkart MERN",
-    "desc": "Full-Stack Flipkart with Admin Dashboard and Paytm Payment Gateway. MERN Stack WebApp, ready to use for business.",
-    "image": "flipkartmern",
-    "category": "mern",
+    "name": "Server Deployment",
+    "desc": "Server Deployment using Redux for hosting and Aiven for Cloud DB.",
+    "image": "CloudDB",
+    "category": "NodeJS, Redux, Aiven",
     "links": {
-      "view": "https://flipkartwebs.herokuapp.com/",
-      "code": "https://github.com/jigar-sable/flipkart-mern"
+      "view": "https://github.com/LukasWess/Server-Deployment-CA.git",
+      "code": "https://github.com/LukasWess/Server-Deployment-CA.git"
     }
   },
   {
