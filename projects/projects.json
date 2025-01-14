@@ -1,13 +1,13 @@
 [
  
   {
-    "name": "Intensive E-Commerce backend system",
-    "desc": "Intensive E-Commerce backend system with all major features like product management, order management, user management, databasem, API's, etc.",
-    "image": "instagrammern",
+    "name": "E-Commerce backend system",
+    "desc": "E-Commerce backend with features like product management, order management, user management, database, API's, etc.",
+    "image": "ecommerce",
     "category": "mern",
     "links": {
-      "view": "https://instagramernstack.herokuapp.com/",
-      "code": "https://github.com/jigar-sable/instagram-mern"
+      "view": "https://github.com/LukasWess/E-Commerce-Backend.git",
+      "code": "https://github.com/LukasWess/E-Commerce-Backend.git"
     }
   },
   {
