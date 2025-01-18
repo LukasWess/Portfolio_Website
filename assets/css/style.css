@@ -96,7 +96,7 @@ section {
   text-align: center;
 }
 .heading span {
-  color: rgb(115, 3, 167);
+  color: var(--light-beige-test);
 }
 header .logo {
   font-size: 1.9rem;
@@ -545,7 +545,7 @@ header .navbar ul li a:hover {
 
 /* education section starts */
 .education {
-  background: #e5ecfb;
+  background: var(--dark-beige-test);
   min-height: 80vh;
 }
 .education .qoute {
@@ -573,7 +573,7 @@ header .navbar ul li a:hover {
   margin-top: 2rem;
   overflow: hidden;
   transition: 0.3s;
-  background: rgb(252, 252, 252);
+  background: var(--light-beige-test);
 }
 .education .box-container .box:hover {
   transform: scale(1.03);
@@ -599,7 +599,7 @@ header .navbar ul li a:hover {
 }
 .education .box-container .box .content h3 {
   font-size: 2.5rem;
-  color: #012970;
+  color: var(--dark-beige-test);
   padding: 0.5rem 0;
   font-weight: 600;
   text-align: left;
@@ -612,7 +612,7 @@ header .navbar ul li a:hover {
 }
 .education h4 {
   font-size: 2rem;
-  color: rgb(34, 109, 0);
+  color: var(--dark-beige-test);
   text-align: left;
   margin: 1rem;
   font-family: "Nunito", sans-serif;
@@ -653,14 +653,14 @@ header .navbar ul li a:hover {
 /* work section starts */
 .work {
   /* background: #010124; */
-  background: linear-gradient(to bottom, #000031, #00002c);
+  background: var(--dark-beige-test);
 }
 .work h2 {
   color: #fff;
   padding: 1rem;
 }
 .work .heading span {
-  color: rgb(255, 230, 0);
+  color: var(--light-beige-test);
 }
 .work .box-container {
   display: flex;
@@ -699,7 +699,7 @@ header .navbar ul li a:hover {
   height: 4.5rem;
   width: 100%;
   padding-left: 1rem;
-  background: #ffd900;
+  background: var(--light-beige-test);
 }
 .work .box-container .box .content .tag h3 {
   font-size: 2rem;
@@ -771,6 +771,11 @@ header .navbar ul li a:hover {
 /* work section ends */
 
 /* experience section starts */
+
+.experience {
+  background: var(--dark-beige-test);
+  min-height: 80vh;
+}
 .experience .timeline {
   position: relative;
   max-width: 1200px;
@@ -780,7 +785,7 @@ header .navbar ul li a:hover {
   content: "";
   position: absolute;
   width: 6px;
-  background: #020133;
+  background: var(--light-beige-test);
   top: 0;
   bottom: 0;
   left: 50%;
@@ -801,14 +806,14 @@ header .navbar ul li a:hover {
   height: 25px;
   right: -17px;
   background-color: rgb(255, 255, 255);
-  border: 4px solid #ff9f55;
+  border: 4px solid var(--light-beige-test);
   top: 15px;
   border-radius: 50%;
   z-index: 100;
   font-size: 1.89rem;
   text-align: center;
   font-weight: 600;
-  color: #02094b;
+  color: var(--dark-beige-test);
   font-family: "Font Awesome\ 5 Free";
 }
 .experience .left {
@@ -826,9 +831,9 @@ header .navbar ul li a:hover {
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid #f68c09;
+  border: medium solid var(--light-beige-test);
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent #f68c09;
+  border-color: transparent transparent transparent var(--light-beige-test);
 }
 /* arrows pointing left  */
 .experience .right::before {
@@ -839,15 +844,15 @@ header .navbar ul li a:hover {
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid #f68c09;
+  border: medium solid var(--light-beige-test);
   border-width: 10px 10px 10px 0;
-  border-color: transparent #f68c09 transparent transparent;
+  border-color: transparent var(--light-beige-test) transparent transparent;
 }
 .experience .right::after {
   left: -16px;
 }
 .experience .content {
-  background-color: #f68c09;
+  background-color: var(--light-beige-test);
   position: relative;
   border-radius: 6px;
 }
@@ -878,9 +883,9 @@ header .navbar ul li a:hover {
   padding: 1.6rem 3rem;
   border-radius: 0.5em;
   transition: 0.5s;
-  color: #fff;
-  background: #2506ad;
-  box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+  color: black;
+  background: white;
+  box-shadow: 0px 5px 10px var(--light-beige-test);
   text-align: center;
 }
 .morebtn .btn span {
@@ -894,7 +899,7 @@ header .navbar ul li a:hover {
   transition: 0.3s;
 }
 .morebtn .btn:hover {
-  background: #1a047e;
+  background: var(--light-beige-test);
 }
 .morebtn .btn:hover i {
   transform: translateX(5px);
@@ -943,13 +948,13 @@ header .navbar ul li a:hover {
 
 /* contact section starts */
 .contact {
-  background: #e5ecfb;
+  background: var(--dark-beige-test);
   min-height: 60vh;
 }
 .contact .container {
   max-width: 1050px;
   width: 100%;
-  background: #fff;
+  background: var(--light-beige-test);
   border-radius: 1.5rem;
   margin: 2rem 5rem;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
@@ -989,7 +994,7 @@ form i {
   position: absolute;
   top: 50%;
   left: 18px;
-  color: rgb(51, 51, 51);
+  color: var(--light-beige-test);
   font-size: 17px;
   pointer-events: none;
   transform: translateY(-50%);
@@ -1013,11 +1018,11 @@ form .message textarea {
 .field input:focus,
 .message textarea:focus {
   padding-left: 47px;
-  border: 2px solid rgb(115, 3, 167);
+  border: 2px solid var(--dark-beige-test);
 }
 .field input:focus ~ i,
 .message textarea:focus ~ i {
-  color: rgb(115, 3, 167);
+  color: var(--dark-beige-test);
 }
 form .message {
   position: relative;
@@ -1045,20 +1050,20 @@ form .button-area {
   flex-direction: row-reverse;
 }
 .button-area button {
-  color: #fff;
+  color: black;
   border: none;
   outline: none;
   font-size: 1.8rem;
   cursor: pointer;
   border-radius: 5px;
   padding: 13px 25px;
-  background: #2506ad;
-  box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+  background: white;
+  box-shadow: 0px 5px 10px var(--light-beige-test);
   transition: 0.3s ease;
   font-family: "Nunito", sans-serif;
 }
 .button-area button:hover {
-  background: #421cecf5;
+  background: var(--dark-beige-test);
 }
 .button-area span {
   font-size: 17px;
@@ -1102,7 +1107,7 @@ form .button-area {
 .footer {
   min-height: auto;
   padding-top: 0;
-  background: rgb(0, 1, 43);
+  background: var(--light-beige-test);
 }
 .footer .box-container {
   display: flex;
@@ -1115,28 +1120,28 @@ form .button-area {
 }
 .footer .box-container .box h3 {
   font-size: 2.5rem;
-  color: #fff;
+  color: var(--dark-beige-test);
   padding-bottom: 1rem;
   font-weight: normal;
 }
 .footer .box-container .box p {
   font-size: 1.5rem;
-  color: #ccc;
+  color: var(--dark-beige-test);
   padding: 0.7rem 0;
   text-transform: none;
 }
 .footer .box-container .box p i {
   padding-right: 1rem;
-  color: #ffae00;
+  color: var(--dark-beige-test);
 }
 .footer .box-container .box a {
   font-size: 1.5rem;
-  color: rgb(238, 238, 238);
+  color: var(--dark-beige-test);
   padding: 0.3rem 0;
   display: block;
 }
 .footer .box-container .box a:hover {
-  color: #ffae00;
+  scale: 0.98;
 }
 .footer .box-container .box .share {
   display: flex;
@@ -1160,7 +1165,7 @@ form .button-area {
   background: transparent;
   transform: scale(0.98);
   border: 0.1rem solid rgb(180, 178, 178);
-  color: #ffae00;
+  color: var(--dark-beige-test);
 }
 .footer .credit {
   padding: 1rem 0 0 0;
@@ -1172,7 +1177,7 @@ form .button-area {
   border-top: 0.1rem solid #fff3;
 }
 .footer .credit a {
-  color: #ffae00;
+  color: var(--dark-beige-test);
 }
 .footer .fa {
   color: #e90606;
