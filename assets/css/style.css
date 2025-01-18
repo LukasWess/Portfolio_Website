@@ -9,6 +9,8 @@
   --text-gray: #b3b3b3;       /* Secondary text */
   --steel-gray: #4a4a4a;      /* Borders/Dividers */
   --background-dark: #1a1a1a; /* Dark background */
+  --dark-beige-test: #5d3a1a;
+  --light-beige-test: #D2B48C; 
 }
 
 * {
@@ -47,7 +49,7 @@ html::-webkit-scrollbar-track {
   background: rgb(235, 202, 245);
 }
 html::-webkit-scrollbar-thumb {
-  background: #32cd32;
+  background: #5d3a1a;
 }
 
 /* pre loader start */
@@ -100,7 +102,7 @@ header .logo {
   font-size: 1.9rem;
   font-weight: 800;
   text-decoration: none;
-  color: #32cd32;
+  color: var(--light-beige-test);
 }
 header .logo i {
   font-size: 2.2rem;
@@ -119,7 +121,7 @@ header .navbar li {
 }
 header .navbar ul li a {
   font-size: 1.57rem;
-  color: #00ffff;
+  color: #5d3a1a;
   font-weight: 600;
   text-decoration: none;
   letter-spacing: 0.04rem;
@@ -127,8 +129,8 @@ header .navbar ul li a {
 }
 header .navbar ul li a.active,
 header .navbar ul li a:hover {
-  color: #32cd32;
-  border-bottom: 0.2rem solid #32cd32;
+  color: var(--light-beige-test);
+  border-bottom: 0.2rem solid var(--light-beige-test);
   padding: 0.5rem 0;
 }
 /* navbar ends */
@@ -197,7 +199,7 @@ header .navbar ul li a:hover {
   min-height: 100vh;
   align-items: center;
   pointer-events: all;
-  background-color: #1a1a1a;
+  background-color: var(--dark-beige-test);
 }
 .home #particles-js {
   position: absolute;
@@ -216,7 +218,7 @@ header .navbar ul li a:hover {
   height: 100%;
   width: 100%;
   z-index: -1;
-  background-color: #262626;
+  background-color: var(--dark-beige-test);
 }
 .home .content {
   flex: 1 1 40rem;
@@ -234,7 +236,7 @@ header .navbar ul li a:hover {
 .home .content h2 span {
   font-size: 5rem;
   font-weight: 800;
-  color: #00ffff;
+  color: var(--light-beige-test);
 }
 .home .content p {
   font-size: 2.5rem;
@@ -244,7 +246,7 @@ header .navbar ul li a:hover {
 }
 .home .content p span {
   font-size: 2.5rem;
-  color: #00ffff;
+  color: var(--light-beige-test);
   font-weight: 600;
   padding: 1rem 0;
 }
@@ -255,9 +257,9 @@ header .navbar ul li a:hover {
   padding: 1.6rem 3rem;
   border-radius: 4em;
   transition: 0.5s;
-  color: #fff;
-  background: #2506ad;
-  box-shadow: 0px 5px 18px rgba(48, 68, 247, 0.6);
+  color: black;
+  background: white;
+  box-shadow: 0px 5px 18px rgba(221, 233, 51, 0.6);
   font-family: "Nunito", sans-serif;
 }
 .home .btn span {
@@ -271,7 +273,7 @@ header .navbar ul li a:hover {
   transition: 0.3s;
 }
 .home .btn:hover {
-  background: #1a047e;
+  background: var(--light-beige-test);
 }
 .home .btn:hover i {
   transform: translateX(5px);
@@ -294,8 +296,8 @@ header .navbar ul li a:hover {
   font-size: 2rem;
   display: inline-block;
   line-height: 44px;
-  color: #00d9ff;
-  background-color: #09011b;
+  color: black;
+  background-color: white;
   width: 44px;
   height: 44px;
   text-align: center;
