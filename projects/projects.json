@@ -12,7 +12,7 @@
   },
   {
     "name": "Server Deployment",
-    "desc": "Server Deployment using Redux for hosting and Aiven for Cloud DB.",
+    "desc": "Server Deployment using Render for hosting and Aiven for a MySQL DB in the cloud.",
     "image": "CloudDB",
     "category": "NodeJS, Redux, Aiven",
     "links": {
