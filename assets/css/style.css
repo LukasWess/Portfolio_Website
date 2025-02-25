@@ -354,7 +354,18 @@ header .navbar ul li a:hover {
 /* about section starts */
 .about {
   background: var(--dark-beige-test);
+  
 }
+.about #particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+  pointer-events: none;
+}
+
 .about .row {
   display: flex;
   flex-direction: row;
@@ -1239,5 +1250,21 @@ form .button-area {
 }
 #scroll-top.active {
   top: calc(100% - 12rem);
+}
+
+/* particles-js positioning */
+#particles-about,
+#particles-skills,
+#particles-education,
+#particles-work,
+#particles-experience,
+#particles-contact {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  pointer-events: none;
 }
 /* scroll top ends */
