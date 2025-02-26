@@ -2,15 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
 
 :root {
-  --primary-dark: #1a1a1a;    /* Main background */
-  --secondary-dark: #262626;   /* Secondary background */
-  --accent-red: #ff4d4d;      /* Accent color */
-  --text-light: #e6e6e6;      /* Primary text */
-  --text-gray: #b3b3b3;       /* Secondary text */
-  --steel-gray: #4a4a4a;      /* Borders/Dividers */
-  --background-dark: #1a1a1a; /* Dark background */
-  --dark-beige-test: #1a1a1a;
-  --light-beige-test:  #03f8fb; 
+  --primary-dark: #1e1e2f;    /* Main background */
+  --secondary-dark: #2e2e3e;  /* Secondary background */
+  --accent-blue: #4a90e2;     /* Accent color */
+  --text-light: #f5f5f5;      /* Primary text */
+  --text-gray: #a0a0a0;       /* Secondary text */
+  --steel-gray: #3a3a4a;      /* Borders/Dividers */
+  --background-dark: #1e1e2f; /* Dark background */
+  --light-blue: #d0e7ff;      /* Light blue */
 }
 
 * {
@@ -29,12 +28,12 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background: #f7f7f7;
+  background: var(--primary-dark);
   font-family: "Poppins", sans-serif;
 }
 
 *::selection {
-  background: var(--accent-red);
+  background: var(--accent-blue);
   color: #fff;
 }
 
@@ -46,10 +45,10 @@ html::-webkit-scrollbar {
   width: 0.8rem;
 }
 html::-webkit-scrollbar-track {
-  background: rgb(235, 202, 245);
+  background: var(--secondary-dark);
 }
 html::-webkit-scrollbar-thumb {
-  background: var(--light-beige-test);
+  background: var(--accent-blue);
 }
 
 /* pre loader start */
@@ -58,7 +57,7 @@ html::-webkit-scrollbar-thumb {
   top: 0;
   left: 0;
   z-index: 10000;
-  background: #e6eff1;
+  background: var(--primary-dark);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -91,24 +90,24 @@ section {
 }
 .heading {
   font-size: 3.5rem;
-  color: rgb(32, 32, 32);
+  color: var(--text-light);
   font-weight: 800;
   text-align: center;
 }
 .heading span {
-  color: var(--light-beige-test);
+  color: var(--accent-blue);
 }
 header .logo {
   font-size: 1.9rem;
   font-weight: 800;
   text-decoration: none;
-  color: var(--light-beige-test);
+  color: var(--accent-blue);
 }
 header .logo i {
   font-size: 2.2rem;
 }
 header .logo:hover {
-  color: #32cd32;
+  color: var(--accent-blue);
 }
 header .navbar ul {
   list-style: none;
@@ -121,7 +120,7 @@ header .navbar li {
 }
 header .navbar ul li a {
   font-size: 1.57rem;
-  color: #5d3a1a;
+  color: var(--text-gray);
   font-weight: 600;
   text-decoration: none;
   letter-spacing: 0.04rem;
@@ -129,8 +128,8 @@ header .navbar ul li a {
 }
 header .navbar ul li a.active,
 header .navbar ul li a:hover {
-  color: var(--light-beige-test);
-  border-bottom: 0.2rem solid var(--light-beige-test);
+  color: var(--accent-blue);
+  border-bottom: 0.2rem solid var(--accent-blue);
   padding: 0.5rem 0;
 }
 /* navbar ends */
@@ -139,7 +138,7 @@ header .navbar ul li a:hover {
 #menu {
   font-size: 3rem;
   cursor: pointer;
-  color: rgb(24, 2, 63);
+  color: var(--accent-blue);
   display: none;
 }
 @media (max-width: 768px) {
@@ -171,15 +170,15 @@ header .navbar ul li a:hover {
     display: block;
     padding: 1rem;
     text-align: left;
-    color: #fff;
+    color: var(--text-light);
     font-size: 2rem;
   }
   header .navbar ul li a.active,
   header .navbar ul li a:hover {
     padding: 1rem;
-    color: #fff;
+    color: var(--text-light);
     border-radius: 0.5rem;
-    border-bottom: 0.5rem solid var(--accent-red);
+    border-bottom: 0.5rem solid var(--accent-blue);
   }
   .fa-times {
     transform: rotate(180deg);
@@ -199,7 +198,7 @@ header .navbar ul li a:hover {
   min-height: 100vh;
   align-items: center;
   pointer-events: all;
-  background-color: var(--dark-beige-test);
+  background-color: var(--primary-dark);
 }
 .home #particles-js {
   position: absolute;
@@ -218,7 +217,7 @@ header .navbar ul li a:hover {
   height: 100%;
   width: 100%;
   z-index: -1;
-  background-color: var(--dark-beige-test);
+  background-color: var(--primary-dark);
 }
 .home .content {
   flex: 1 1 40rem;
@@ -231,22 +230,22 @@ header .navbar ul li a:hover {
 .home .content h2 {
   font-size: 5rem;
   font-weight: 800;
-  color: #e6e6e6;
+  color: var(--text-light);
 }
 .home .content h2 span {
   font-size: 5rem;
   font-weight: 800;
-  color: var(--light-beige-test);
+  color: var(--accent-blue);
 }
 .home .content p {
   font-size: 2.5rem;
-  color: #b3b3b3;
+  color: var(--text-gray);
   font-weight: 600;
   padding: 1rem 0;
 }
 .home .content p span {
   font-size: 2.5rem;
-  color: var(--light-beige-test);
+  color: var(--accent-blue);
   font-weight: 600;
   padding: 1rem 0;
 }
@@ -257,8 +256,8 @@ header .navbar ul li a:hover {
   padding: 1.6rem 3rem;
   border-radius: 4em;
   transition: 0.5s;
-  color: black;
-  background: white;
+  color: var(--primary-dark);
+  background: var(--accent-blue);
   box-shadow: 0px 5px 18px rgba(221, 233, 51, 0.6);
   font-family: "Nunito", sans-serif;
 }
@@ -273,7 +272,7 @@ header .navbar ul li a:hover {
   transition: 0.3s;
 }
 .home .btn:hover {
-  background: var(--light-beige-test);
+  background: var(--light-blue);
 }
 .home .btn:hover i {
   transform: translateX(5px);
@@ -353,7 +352,7 @@ header .navbar ul li a:hover {
 
 /* about section starts */
 .about {
-  background: var(--dark-beige-test);
+  background: var(--primary-dark);
   
 }
 .about #particles-js {
@@ -395,12 +394,12 @@ header .navbar ul li a:hover {
   padding: 3rem;
 }
 .about .row .content h3 {
-  color: rgb(27, 27, 27);
+  color: var(--text-light);
   font-size: 2.5rem;
 }
 .about .row .content .tag {
   font-size: 1.4rem;
-  color: var(--light-beige-test);
+  color: var(--accent-blue);
   font-weight: 600;
   margin-top: 1rem;
 }
@@ -410,6 +409,7 @@ header .navbar ul li a:hover {
   font-family: "Nunito";
   font-weight: 600;
   text-transform: none;
+  color: var(--text-gray);
 }
 .about .row .content .box-container {
   display: flex;
@@ -422,7 +422,7 @@ header .navbar ul li a:hover {
   text-transform: none;
 }
 .about .row .content .box-container .box p span {
-  color: var(--light-beige-test);
+  color: var(--accent-blue);
 }
 .resumebtn {
   margin-top: 6rem;
@@ -431,8 +431,8 @@ header .navbar ul li a:hover {
   padding: 1.7rem 3rem;
   border-radius: 0.5em;
   transition: 0.3s;
-  color: black;
-  background: white;
+  color: var(--primary-dark);
+  background: var(--accent-blue);
   box-shadow: 0px 5px 10px var(--light-beige-test);
   font-family: "Nunito", sans-serif;
 }
@@ -447,7 +447,7 @@ header .navbar ul li a:hover {
   transition: 0.3s;
 }
 .resumebtn .btn:hover {
-  background: var(--light-beige-test);
+  background: var(--light-blue);
 }
 .resumebtn .btn:hover i {
   transform: translateX(5px);
@@ -479,17 +479,17 @@ header .navbar ul li a:hover {
 /* skills section starts */
 .skills {
   min-height: 90vh;
-  background: var(--dark-beige-test);
+  background: var(--primary-dark);
 }
 .skills h2 {
-  color: #fff;
+  color: var(--text-light);
 }
 .skills .heading span {
-  color: var(--light-beige-test);
+  color: var(--accent-blue);
 }
 .skills .container {
-  background: rgba(0, 0, 22, 0.4);
-  color: #fff;
+  background: var(--secondary-dark);
+  color: var(--text-light);
   border-radius: 1rem;
   padding: 4rem 2rem;  /* Increased padding */
   width: 90%;
@@ -515,7 +515,7 @@ header .navbar ul li a:hover {
 }
 .skills .container .bar:hover {
   box-shadow: 0 8px 10px --light-beige-test !important;
-  background-color: var(--light-beige-test) !important;
+  background-color: var(--accent-blue) !important;
 }
 .skills .container .bar .info {
   width: 100%;  /* Full width */
@@ -556,7 +556,7 @@ header .navbar ul li a:hover {
 
 /* education section starts */
 .education {
-  background: var(--dark-beige-test);
+  background: var(--primary-dark);
   min-height: 80vh;
 }
 .education .qoute {
@@ -584,7 +584,7 @@ header .navbar ul li a:hover {
   margin-top: 2rem;
   overflow: hidden;
   transition: 0.3s;
-  background: #0072ce;
+  background: var(--accent-blue);
 }
 .education .box-container .box:hover {
   transform: scale(1.03);
@@ -610,18 +610,17 @@ header .navbar ul li a:hover {
 }
 .education .box-container .box .content h3 {
   font-size: 2.5rem;
-  color: var(--dark-beige-test);
+  color: var(--text-light);
   padding: 0.5rem 0;
   font-weight: 600;
   text-align: left;
   margin-left: 1rem;
-  color: #fff;
 }
 .education .box-container .box .content p {
   font-size: 1.5rem;
   margin-left: 1rem;
   text-align: left;
-  color: #fff;
+  color: var(--text-light);
 }
 .education h4 {
   font-size: 2rem;
@@ -665,15 +664,14 @@ header .navbar ul li a:hover {
 
 /* work section starts */
 .work {
-  /* background: #010124; */
-  background: var(--dark-beige-test);
+  background: var(--primary-dark);
 }
 .work h2 {
-  color: #fff;
+  color: var(--text-light);
   padding: 1rem;
 }
 .work .heading span {
-  color: var(--light-beige-test);
+  color: var(--accent-blue);
 }
 .work .box-container {
   display: flex;
@@ -700,7 +698,7 @@ header .navbar ul li a:hover {
   position: absolute;
   top: 85%;
   left: 0;
-  background: rgba(255, 255, 255, 0.9);
+  background: var(--light-blue);
   display: flex;
   flex-direction: column;
 }
@@ -712,7 +710,7 @@ header .navbar ul li a:hover {
   height: 4.5rem;
   width: 100%;
   padding-left: 1rem;
-  background: var(--light-beige-test);
+  background: var(--accent-blue);
 }
 .work .box-container .box .content .tag h3 {
   font-size: 2rem;
@@ -786,7 +784,7 @@ header .navbar ul li a:hover {
 /* experience section starts */
 
 .experience {
-  background: var(--dark-beige-test);
+  background: var(--primary-dark);
   min-height: 80vh;
 }
 .experience .timeline {
@@ -798,7 +796,7 @@ header .navbar ul li a:hover {
   content: "";
   position: absolute;
   width: 6px;
-  background: var(--light-beige-test);
+  background: var(--accent-blue);
   top: 0;
   bottom: 0;
   left: 50%;
@@ -818,8 +816,8 @@ header .navbar ul li a:hover {
   width: 25px;
   height: 25px;
   right: -17px;
-  background-color: rgb(255, 255, 255);
-  border: 4px solid var(--light-beige-test);
+  background-color: var(--light-blue);
+  border: 4px solid var(--accent-blue);
   top: 15px;
   border-radius: 50%;
   z-index: 100;
@@ -844,9 +842,9 @@ header .navbar ul li a:hover {
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid var(--light-beige-test);
+  border: medium solid var(--accent-blue);
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent var(--light-beige-test);
+  border-color: transparent transparent transparent var(--accent-blue);
 }
 /* arrows pointing left  */
 .experience .right::before {
@@ -857,15 +855,15 @@ header .navbar ul li a:hover {
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid var(--light-beige-test);
+  border: medium solid var(--accent-blue);
   border-width: 10px 10px 10px 0;
-  border-color: transparent var(--light-beige-test) transparent transparent;
+  border-color: transparent var(--accent-blue) transparent transparent;
 }
 .experience .right::after {
   left: -16px;
 }
 .experience .content {
-  background-color: var(--light-beige-test);
+  background-color: var(--light-blue);
   position: relative;
   border-radius: 6px;
 }
@@ -881,9 +879,11 @@ header .navbar ul li a:hover {
 .experience .content .desc h3 {
   font-size: 1.5rem;
   font-weight: 600;
+  color: var(--primary-dark);
 }
 .experience .content .desc p {
   font-size: 1.2rem;
+  color: var(--primary-dark);
 }
 /* view all button */
 .morebtn {
@@ -912,7 +912,7 @@ header .navbar ul li a:hover {
   transition: 0.3s;
 }
 .morebtn .btn:hover {
-  background: var(--light-beige-test);
+  background: var(--light-blue);
 }
 .morebtn .btn:hover i {
   transform: translateX(5px);
@@ -961,13 +961,13 @@ header .navbar ul li a:hover {
 
 /* contact section starts */
 .contact {
-  background: var(--dark-beige-test);
+  background: var(--primary-dark);
   min-height: 60vh;
 }
 .contact .container {
   max-width: 1050px;
   width: 100%;
-  background: var(--light-beige-test);
+  background: var(--light-blue);
   border-radius: 1.5rem;
   margin: 2rem 5rem;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
@@ -1021,17 +1021,17 @@ form .message textarea {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   border-radius: 5px;
-  border: 1px solid rgb(51, 51, 51);
-  background: #e5ecfb;
+  border: 1px solid var(--steel-gray);
+  background: var(--secondary-dark);
 }
 .field input::placeholder,
 .message textarea::placeholder {
-  color: rgb(51, 51, 51);
+  color: var(--text-gray);
 }
 .field input:focus,
 .message textarea:focus {
   padding-left: 47px;
-  border: 2px solid var(--dark-beige-test);
+  border: 2px solid var(--accent-blue);
 }
 .field input:focus ~ i,
 .message textarea:focus ~ i {
@@ -1063,20 +1063,20 @@ form .button-area {
   flex-direction: row-reverse;
 }
 .button-area button {
-  color: black;
+  color: var(--primary-dark);
   border: none;
   outline: none;
   font-size: 1.8rem;
   cursor: pointer;
   border-radius: 5px;
   padding: 13px 25px;
-  background: white;
+  background: var(--accent-blue);
   box-shadow: 0px 5px 10px var(--light-beige-test);
   transition: 0.3s ease;
   font-family: "Nunito", sans-serif;
 }
 .button-area button:hover {
-  background: var(--dark-beige-test);
+  background: var(--light-blue);
 }
 .button-area span {
   font-size: 17px;
@@ -1120,7 +1120,7 @@ form .button-area {
 .footer {
   min-height: auto;
   padding-top: 0;
-  background: var(--light-beige-test);
+  background: var(--secondary-dark);
 }
 .footer .box-container {
   display: flex;
@@ -1133,13 +1133,13 @@ form .button-area {
 }
 .footer .box-container .box h3 {
   font-size: 2.5rem;
-  color: var(--dark-beige-test);
+  color: var(--text-light);
   padding-bottom: 1rem;
   font-weight: normal;
 }
 .footer .box-container .box p {
   font-size: 1.5rem;
-  color: var(--dark-beige-test);
+  color: var(--text-light);
   padding: 0.7rem 0;
   text-transform: none;
 }
@@ -1149,12 +1149,13 @@ form .button-area {
 }
 .footer .box-container .box a {
   font-size: 1.5rem;
-  color: var(--dark-beige-test);
+  color: var(--text-light);
   padding: 0.3rem 0;
   display: block;
 }
 .footer .box-container .box a:hover {
   scale: 0.98;
+  color: var(--accent-blue);
 }
 .footer .box-container .box .share {
   display: flex;
@@ -1186,11 +1187,11 @@ form .button-area {
   font-size: 1.5rem;
   font-family: "Nunito", sans-serif;
   font-weight: 600;
-  color: #fff;
+  color: var(--text-light);
   border-top: 0.1rem solid #fff3;
 }
 .footer .credit a {
-  color: var(--dark-beige-test);
+  color: var(--accent-blue);
 }
 .footer .fa {
   color: #e90606;
@@ -1242,8 +1243,8 @@ form .button-area {
   right: 2rem;
   padding: 1rem 1.5rem;
   font-size: 2rem;
-  background: #ffae00;
-  color: rgb(13, 0, 44);
+  background: var(--accent-blue);
+  color: var(--primary-dark);
   border-radius: 50%;
   transition: 1s linear;
   z-index: 1000;

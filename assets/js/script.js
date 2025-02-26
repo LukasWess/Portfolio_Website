@@ -29,12 +29,14 @@ $(document).ready(function () {
         });
     });
 
-    // smooth scrolling
+    // smooth scrolling with offset
     $('a[href*="#"]').on('click', function (e) {
         e.preventDefault();
+        const target = $($(this).attr('href'));
+        const offset = 70; // Adjust this value as needed
         $('html, body').animate({
-            scrollTop: $($(this).attr('href')).offset().top,
-        }, 500, 'linear')
+            scrollTop: target.offset().top - offset,
+        }, 500, 'linear');
     });
 
     // <!-- emailjs to mail contact form data -->
